@@ -34,6 +34,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 public class SwaggerWebUtil {
 
     /**
+     * springboot startup 参数配置
      * @param registry web参数
      * @param enable 是否开启swagger
      */
