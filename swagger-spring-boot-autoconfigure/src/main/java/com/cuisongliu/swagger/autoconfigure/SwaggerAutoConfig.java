@@ -25,7 +25,6 @@ package com.cuisongliu.swagger.autoconfigure;
 
 import com.cuisongliu.swagger.autoconfigure.properties.SwaggerProperties;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -49,7 +48,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @ConditionalOnWebApplication
 @EnableSwagger2
 @EnableConfigurationProperties(SwaggerProperties.class)
-@ConditionalOnProperty(name = SwaggerProperties.SWAGGER_PREFIX+".enable", havingValue = "true")
 public class SwaggerAutoConfig {
 
     @Bean

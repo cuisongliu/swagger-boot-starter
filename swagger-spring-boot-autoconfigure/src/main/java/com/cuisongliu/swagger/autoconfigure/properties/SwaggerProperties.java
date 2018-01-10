@@ -39,11 +39,6 @@ public class SwaggerProperties {
     public static final String SWAGGER_PREFIX="spring.swagger";
 
     /**
-     * 是否开启swagger
-     */
-    private Boolean enable = false;
-
-    /**
      * 标题
      */
     private String title = "cuisongliu's Doc";
@@ -77,14 +72,6 @@ public class SwaggerProperties {
      *  用户的个人信息 个人网站
      */
     private String url="http://www.cuisongliu.com";
-
-    public Boolean getEnable() {
-        return enable;
-    }
-
-    public void setEnable(Boolean enable) {
-        this.enable = enable;
-    }
 
     public String getTitle() {
         return title;
